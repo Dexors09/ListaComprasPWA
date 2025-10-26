@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+  <title>Lista de Compras</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#0d6efd">
+</head>
+
+<body>
+  <div class="container">
+    <h1>🛒 Registro de Compras</h1>
+
+    <!-- Presupuesto y total -->
+    <div class="presupuesto">
+      <input id="presupuesto" type="number" placeholder="Presupuesto" />
+      <span class="separator">|</span>
+      <span id="total">Total: $0.00</span>
+    </div>
+
+    <!-- Nueva compra -->
+    <div class="nuevo">
+      <input id="nombre" type="text" placeholder="Artículo" />
+      <input id="cantidad" type="number" placeholder="Cantidad" />
+      <input id="precio" type="number" placeholder="Precio" step="0.01" />
+      <p id="subtotal">Subtotal: $0.00</p>
+      <button id="agregar">Agregar a la lista</button>
+    </div>
+
+    <!-- Lista -->
+    <ul id="lista"></ul>
+
+    <button id="limpiar" class="danger">Limpiar lista</button>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
